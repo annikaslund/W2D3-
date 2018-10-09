@@ -17,3 +17,13 @@ describe Array do
     end
   end
 end
+
+describe "my_transpose" do
+  it "returns an empty array if the argument is empty" do
+    expect(my_transpose([])).to eq([])
+  end
+
+  it "returns array if array length is one" do
+    expect(my_transpose([1])).to eq([1])
+  end
+end

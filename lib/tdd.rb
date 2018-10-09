@@ -22,3 +22,7 @@ class Array
     pairs
   end
 end
+
+def my_transpose(array)
+  return array if array.empty? || array.length == 1
+end
