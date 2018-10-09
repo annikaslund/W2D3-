@@ -11,14 +11,14 @@ class Array
     return self if self.empty?
     pairs = []
 
-    self.each_with_index do |n, idx|
-      (idx+1..self.length-1).each_with_index do |n2, idx2|
+    (0...self.length).each do |idx|
+      (idx+1..self.length-1).each do |idx2|
         if self[idx] + self[idx2] == 0
           pairs << [idx, idx2]
         end
       end
     end
 
-    pairs 
+    pairs
   end
 end
