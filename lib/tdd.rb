@@ -6,4 +6,8 @@ class Array
     end
     hash.keys
   end
+
+  def two_sum
+    return self if self.empty?
+  end
 end
