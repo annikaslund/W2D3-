@@ -26,4 +26,12 @@ describe "my_transpose" do
   it "returns array if array length is one" do
     expect(my_transpose([1])).to eq([1])
   end
+
+  it "transposes a small array" do
+    expect(my_transpose([[1, 2], [3, 4]])).to eq([[1, 3], [2, 4]])
+  end
+
+  it "transposes larger arrays" do
+    expect(my_transpose([[1, 2, 3], [4, 5, 6], [7, 8, 9]])).to eq([[1, 4, 7], [2, 5, 8], [3, 6, 9]])
+  end
 end
